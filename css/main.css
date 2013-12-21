@@ -1,0 +1,188 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.8);
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    z-index: 100;
+}
+
+body {
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,Georgia;
+    font-size: 16px;
+    color: #000;
+}
+
+#wrapper {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-140px;
+    margin-left:-250px;
+    z-index: 1000;
+}
+
+#content {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 8px #4e7ba3;
+    -moz-box-shadow: 0 0 8px #4e7ba3;
+    box-shadow: 0 0 8px #4e7ba3;
+}
+
+#content h1 {
+    padding: 20px;
+    text-shadow: 0 1px 0 #ededed;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #0b405f;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,Georgia;
+}
+
+#content p {
+    padding: 0 20px 20px 20px;
+    line-height: 20px;
+    text-align: justify;
+    color: #5d646d;
+}
+
+#content ul {
+    padding: 0 0 13px 20px;
+}
+
+#content ul li {
+    list-style: none;
+    padding: 0 0 7px 0;
+}
+
+#content ul li a,a {
+    color: #0b405f;
+    text-decoration: none;
+}
+
+#content ul li a:hover,a:hover {
+    text-decoration: none;
+}
+
+#content ul li a:hover:after {
+    content: " →";
+}
+#nightSky {
+    z-index:-1;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #wrapper {
+        width:90%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    #wrapper {
+        width:90%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
