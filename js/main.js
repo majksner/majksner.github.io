@@ -34,9 +34,11 @@ var NightSkySingleton = (function() {
       this.init = function() {
 
         // console.log("sleepMoreSky init");
-        $("body").append('<canvas id="nightSky"></canvas>');
+        var newCanvas = document.createElement("canvas");
+        document.body.appendChild(newCanvas)
+        newCanvas.setAttribute("id", "nightSky");
 
-        canvas = document.getElementById('nightSky');
+        canvas = document.getElementById("nightSky");
 
         // console.log("sleepMoreSky init !_skyisAnimating");
         if(canvas && canvas.getContext) {
@@ -44,10 +46,8 @@ var NightSkySingleton = (function() {
 
           // Register event listeners
           // window.addEventListener('resize', windowResizeHandler, false);
-          $(window).bind("resize", windowResizeHandler);
-          $(window).trigger("resize");
-
-
+          window.addEventListener("resize", windowResizeHandler, true);
+          window.dispatchEvent(new Event("resize"));
 
           // createParticles();
           // _interval = setInterval(loop, 50);
